@@ -1,0 +1,53 @@
+body {
+  background-image: url("./images/space.jpg");
+  font-size: 2rem;
+  object-fit: cover;
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+}
+.clock {
+  width: 30rem;
+  height: 30rem;
+  /* border: 5px solid black; */
+  border-radius: 50%;
+  box-shadow: 0 0 15px 10px rgb(2, 204, 255);
+  background-image: url("./images/giphy.gif");
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 50px auto;
+  position: relative;
+  padding: 2rem;
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.hand {
+  width: 50%;
+  height: 7px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  border-radius: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.second-hand {
+  background: red;
+  height: 5px;
+}
+.hour-hand {
+  height: 10px;
+}
